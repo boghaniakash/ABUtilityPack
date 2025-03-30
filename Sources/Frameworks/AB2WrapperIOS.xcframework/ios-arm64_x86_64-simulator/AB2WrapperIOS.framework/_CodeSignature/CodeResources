@@ -6,15 +6,15 @@
 	<dict>
 		<key>Frameworks/AB2CommonIOS.framework/AB2CommonIOS</key>
 		<data>
-		0bvkiharcLTw7KKzPa5DZemTtlc=
+		zYfM3rAIwVHfUn/jffeO8/kXUQ0=
 		</data>
 		<key>Frameworks/AB2CommonIOS.framework/Info.plist</key>
 		<data>
-		y7vLvABYnRioQwPTg7ArTu2DcpA=
+		OQmyOIKDcfFArlADHh+Gxa8fzbw=
 		</data>
 		<key>Frameworks/AB2CommonIOS.framework/_CodeSignature/CodeResources</key>
 		<data>
-		E7xRAsMc7rZ/ibdezqLxWyeyIdA=
+		XtvE6Cl8SGZJBzZFRvFKjKIdL7I=
 		</data>
 		<key>Headers/AB2WrapperIOS.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DK+NgP+DOO2IOpEeyWRSMRfkE6I=
+		S3phZsf7UrBWsu9bE84bb4SkYOg=
 		</data>
 		<key>Modules/AB2WrapperIOS.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -75,21 +75,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m1kKUZX8NUAPh0ns2bKj/Tc8e9zgBkk7pXpX7yYW13c=
+			jeBc82bilkMUWWOHSJBqw/8NrZwWdThTspmr3MYU574=
 			</data>
 		</dict>
 		<key>Frameworks/AB2CommonIOS.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XGTjjgq2+QLASyHUNpRVVz6OoBxvMcsot0uxsB7KoUU=
+			PXpLhOcae6GBbi02GPER5bJDSin3/zRcLILekQEuDMs=
 			</data>
 		</dict>
 		<key>Frameworks/AB2CommonIOS.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FuR85p3sojajDgUiqwssewF4cUo4vMerNx5ndvzPVXI=
+			3zEbmhBtLcqwyed1RAqglZOyWd+0y4C3HCX+qtO2vow=
 			</data>
 		</dict>
 		<key>Headers/AB2WrapperIOS.h</key>
