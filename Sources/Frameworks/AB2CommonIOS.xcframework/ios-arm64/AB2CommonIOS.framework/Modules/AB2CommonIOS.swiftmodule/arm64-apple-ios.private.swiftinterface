@@ -68,6 +68,10 @@ extension Foundation.Bundle {
   }
   public func decode<T>(_ file: Swift.String) throws -> T where T : Swift.Decodable, T : Swift.Encodable
 }
+extension CoreFoundation.CGFloat {
+  public static func dynamic(_ base: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  public static func accessibleSpacing(_ base: CoreFoundation.CGFloat, isAccessibilityEnabled: Swift.Bool) -> CoreFoundation.CGFloat
+}
 extension Foundation.Data {
   public func decode<T>(as type: T.Type) throws -> T where T : Swift.Decodable
 }
@@ -95,41 +99,6 @@ extension Swift.Encodable {
   public var asDictionary: [Swift.String : Any]? {
     get
   }
-}
-extension Swift.Int {
-  public var asDeviceHeight: CoreFoundation.CGFloat {
-    get
-  }
-  public var asDeviceWidth: CoreFoundation.CGFloat {
-    get
-  }
-}
-extension Swift.Double {
-  public var asDeviceHeight: CoreFoundation.CGFloat {
-    get
-  }
-  public var asDeviceWidth: CoreFoundation.CGFloat {
-    get
-  }
-}
-extension Swift.Float {
-  public var asDeviceHeight: CoreFoundation.CGFloat {
-    get
-  }
-  public var asDeviceWidth: CoreFoundation.CGFloat {
-    get
-  }
-}
-extension CoreFoundation.CGFloat {
-  public var asDeviceHeight: CoreFoundation.CGFloat {
-    get
-  }
-  public var asDeviceWidth: CoreFoundation.CGFloat {
-    get
-  }
-}
-extension Swift.FloatingPoint {
-  public func toString(withDecimalPlaces places: Swift.Int) -> Swift.String
 }
 extension Swift.String {
   public func trim() -> Swift.String
@@ -170,8 +139,8 @@ extension UIKit.UIApplication {
 }
 public enum ABAlert {
   public static func getTopMostVc() -> UIKit.UIViewController?
-  public static func showAlert(title: Swift.String = Bundle.main.appName, titleFont: UIKit.UIFont = .systemFont(ofSize: 18.asDeviceWidth, weight: .semibold), msg: Swift.String? = nil, msgFont: UIKit.UIFont = .systemFont(ofSize: 13.asDeviceWidth, weight: .regular), options: Swift.String..., btnStyle: UIKit.UIAlertAction.Style..., completion: @escaping ((Swift.Int) -> Swift.Void))
-  public static func showAlert(title: Swift.String = Bundle.main.appName, titleFont: UIKit.UIFont = .systemFont(ofSize: 18.asDeviceWidth, weight: .semibold), msg: Swift.String? = nil, msgFont: UIKit.UIFont = .systemFont(ofSize: 13.asDeviceWidth, weight: .regular), buttonText: Swift.String? = "Ok", complition: (() -> Swift.Void)? = nil)
+  public static func showAlert(title: Swift.String = Bundle.main.appName, titleFont: UIKit.UIFont = .systemFont(ofSize: 18, weight: .semibold), msg: Swift.String? = nil, msgFont: UIKit.UIFont = .systemFont(ofSize: 13, weight: .regular), options: Swift.String..., btnStyle: UIKit.UIAlertAction.Style..., completion: @escaping ((Swift.Int) -> Swift.Void))
+  public static func showAlert(title: Swift.String = Bundle.main.appName, titleFont: UIKit.UIFont = .systemFont(ofSize: 18, weight: .semibold), msg: Swift.String? = nil, msgFont: UIKit.UIFont = .systemFont(ofSize: 13, weight: .regular), buttonText: Swift.String? = "Ok", complition: (() -> Swift.Void)? = nil)
   public static func gotoSettingAlert(msg: Swift.String)
   public static func shareApp(with appID: Swift.String)
   public static func shareData(with data: [Any])
@@ -180,7 +149,7 @@ public enum ABAlert {
   public static func openMail(to mail: Swift.String)
   public static func rateApp()
   public static func requestTracking(complition: @escaping () -> Swift.Void)
-  public static func checkTrackingPermission() -> Swift.Bool
+  public static func isTrackingEnable() -> Swift.Bool
   public static func hideKeyboard()
 }
 public enum ABHaptic {
